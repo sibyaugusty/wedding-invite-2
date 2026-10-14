@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scroll">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Wedding Invitation of Adharsh and Anekha — December 03, 2026. Join us in celebrating our special day.">
+  <meta name="theme-color" content="#190a0d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adharsh &amp; Anekha | Wedding Invitation">
+  <meta property="og:description"
+    content="Join us as we celebrate the union of Adharsh and Anekha on December 03, 2026.">
+  <meta property="og:type" content="website">
+  <title>Adharsh &amp; Anekha | December 03, 2026</title>
+
+  <!-- Favicon (monogram) -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%237a1f2e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='26' fill='%23f5efe6' font-family='serif'%3EA%26A%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Playfair Display + Outfit + Great Vibes + Island Moments -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Island+Moments&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger + Lenis (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="no-scroll">
+
+  <!-- ═══════════════════════════════════════════
+       1. LOADER + NAME REVEAL (Calligraphy Handwriting)
+  ════════════════════════════════════════════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <!-- ── Phase 1: Rings with initials centered inside ── -->
+    <div class="loader__phase1" id="phase1">
+      <div class="loader__rings-wrap">
+        <svg class="loader__ring" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" />
+        </svg>
+        <svg class="loader__ring loader__ring--delay" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="35" />
+        </svg>
+        <!-- Initials sit dead-center ON TOP of the rings -->
+        <span class="loader__initials">
+          <span class="loader__letter">A</span>
+          <span class="loader__amp">&amp;</span>
+          <span class="loader__letter">A</span>
+        </span>
+      </div>
+      <p class="loader__tagline">A celebration of love</p>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SITE HEADER / NAVIGATION
+  ════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <a href="#hero" class="site-header__monogram" aria-label="Back to top">A<span>&amp;</span>A</a>
+    <button class="site-header__menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav"
+      aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-header__nav" id="mainNav" aria-label="Main navigation">
+      <a href="#hero">Home</a>
+      <a href="#details">Details</a>
+      <a href="#venue">Venue</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT (hidden until intro completes)
+  ════════════════════════════════════════════ -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ═══════════════════════════════════════
+         3. HERO / LANDING
+    ════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__parallax-bg">
+        <img src="images/couple-floral-arch.jpg"
+          alt="Adharsh &amp; Anekha beneath their floral arch" class="hero__bg-img is-couple-bg" loading="eager">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Together with their families</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="hero__title-name" id="heroGroom">Adharsh</span>
+          <span class="hero__title-and" id="heroWeds">weds</span>
+          <span class="hero__title-name" id="heroBride">Anekha</span>
+        </h1>
+        <div class="hero__divider"></div>
+        <p class="hero__subtitle">Request the pleasure of your company<br>at the celebration of their marriage</p>
+        <p class="hero__date-badge">
+          <span class="hero__date-day">03</span>
+          <span class="hero__date-info">
+            <span>December</span>
+            <span>2026</span>
+          </span>
+        </p>
+      </div>
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         4. OUR STORY
+    ════════════════════════════════════════ -->
+    <section class="story" id="story">
+      <div class="story__container">
+        <div class="story__header reveal-group">
+          <p class="section-eyebrow reveal-item">How it all began</p>
+          <h2 class="section-title reveal-item">Our Story</h2>
+        </div>
+        <div class="story__grid">
+          <div class="story__image-col reveal-item">
+            <div class="story__image-wrapper">
+              <img src="images/couple-floral-arch.jpg"
+                alt="Adharsh &amp; Anekha seated together beneath a red and white floral arch" class="story__img"
+                width="1024" height="1536" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="story__text-col reveal-group">
+            <p class="story__text reveal-item">
+              Two paths, guided by destiny, met on a warm evening of shared conversations and unexpected laughter. From
+              that very first moment, we realized that our journeys were destined to become one.
+            </p>
+            <p class="story__text reveal-item">
+              Through seasons of growth, quiet understandings, and countless cherished memories, our love blossomed into
+              a lifelong promise. We cannot wait to celebrate this sacred milestone surrounded by the people who mean
+              the world to us.
+            </p>
+            <p class="story__signature reveal-item">— With love, always</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         5. WEDDING DETAILS
+    ════════════════════════════════════════ -->
+    <section class="details" id="details">
+      <div class="details__bg-image">
+        <img src="images/couple-sketch.jpg"
+          alt="" aria-hidden="true" class="details__bg-img is-couple-bg is-couple-bg--sketch" loading="lazy">
+      </div>
+      <div class="details__overlay"></div>
+      <div class="details__container">
+        <div class="details__header reveal-group">
+          <p class="section-eyebrow reveal-item">Mark Your Calendar</p>
+          <h2 class="section-title reveal-item">Wedding Details</h2>
+        </div>
+        <div class="details__cards">
+          <!-- Card: Ceremony -->
+          <div class="details__card reveal-item">
+            <div class="details__card-icon">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M24 4c-6 8-16 14-16 24a16 16 0 0032 0c0-10-10-16-16-24z" />
+                <circle cx="24" cy="28" r="4" />
+              </svg>
+            </div>
+            <h3 class="details__card-title">The Ceremony</h3>
+            <p class="details__card-time">10:00 AM — 12:00 PM</p>
+            <p class="details__card-desc">[Ceremony Venue Name]<br>[Venue Address Line, City]</p>
+          </div>
+          <!-- Card: Reception -->
+          <div class="details__card reveal-item">
+            <div class="details__card-icon">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+                <rect x="6" y="20" width="36" height="22" rx="3" />
+                <path d="M6 28h36M24 20v-8M18 12h12M14 20v-4h20v4" />
+              </svg>
+            </div>
+            <h3 class="details__card-title">The Reception</h3>
+            <p class="details__card-time">7:00 PM — 11:00 PM</p>
+            <p class="details__card-desc">[Reception Venue Name]<br>[Grand Ballroom, City]</p>
+          </div>
+          <!-- Card: Dress Code -->
+          <div class="details__card reveal-item">
+            <div class="details__card-icon">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M16 8l-10 8 6 4v20h24V20l6-4-10-8" />
+                <path d="M20 40v-10a4 4 0 018 0v10" />
+              </svg>
+            </div>
+            <h3 class="details__card-title">Dress Code</h3>
+            <p class="details__card-time">Formal / Traditional</p>
+            <p class="details__card-desc">We would love for you to celebrate with us in your finest traditional or
+              formal attire.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         6. COUNTDOWN
+    ════════════════════════════════════════ -->
+    <section class="countdown" id="countdown">
+      <div class="countdown__bg-image">
+        <img src="images/couple-floral-arch.jpg"
+          alt="" aria-hidden="true" class="countdown__bg-img is-couple-bg" loading="lazy">
+      </div>
+      <div class="countdown__overlay"></div>
+      <div class="countdown__container reveal-group">
+        <p class="section-eyebrow reveal-item">The big day is approaching</p>
+        <h2 class="section-title reveal-item">Counting Down</h2>
+        <div class="countdown__timer" id="countdownTimer">
+          <div class="countdown__unit" data-unit="days">
+            <div class="countdown__number-wrap">
+              <span class="countdown__number" id="cdDays">00</span>
+            </div>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__separator">:</div>
+          <div class="countdown__unit" data-unit="hours">
+            <div class="countdown__number-wrap">
+              <span class="countdown__number" id="cdHours">00</span>
+            </div>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__separator">:</div>
+          <div class="countdown__unit" data-unit="minutes">
+            <div class="countdown__number-wrap">
+              <span class="countdown__number" id="cdMinutes">00</span>
+            </div>
+            <span class="countdown__label">Minutes</span>
+          </div>
+          <div class="countdown__separator">:</div>
+          <div class="countdown__unit" data-unit="seconds">
+            <div class="countdown__number-wrap">
+              <span class="countdown__number" id="cdSeconds">00</span>
+            </div>
+            <span class="countdown__label">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown__date reveal-item">December 03, 2026</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         7. VENUE
+    ════════════════════════════════════════ -->
+    <section class="venue" id="venue">
+      <div class="venue__container">
+        <div class="venue__header reveal-group">
+          <p class="section-eyebrow reveal-item">Where we celebrate</p>
+          <h2 class="section-title reveal-item">The Venue</h2>
+        </div>
+        <div class="venue__grid">
+          <div class="venue__info reveal-group">
+            <h3 class="venue__name reveal-item">[Grand Heritage Convention Centre]</h3>
+            <p class="venue__address reveal-item">
+              [Palace Road, Near Lake View Gardens]<br>
+              [Kochi, Kerala — 682001]
+            </p>
+            <p class="venue__note reveal-item">
+              Nestled amidst lush greenery and timeless architecture, this beautiful sanctuary provides the perfect
+              setting for our sacred union.
+            </p>
+            <a href="#directions" class="venue__directions-link reveal-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+              View Route &amp; Travel Info
+            </a>
+          </div>
+          <div class="venue__map-col reveal-item">
+            <div class="venue__map-card" id="venueMap">
+              <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80"
+                alt="Venue Preview" class="venue__map-bg" loading="lazy">
+              <div class="venue__map-content">
+                <div class="venue__map-pin">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                  </svg>
+                </div>
+                <h4
+                  style="font-family: var(--ff-display); font-size: 1.2rem; color: var(--c-ivory); margin-bottom: 0.3rem;">
+                  [Venue Name]</h4>
+                <p style="font-size: 0.85rem; color: var(--c-gold-light); margin-bottom: 0.8rem;">Scenic Garden Hall</p>
+                <a href="#directions" class="btn btn--primary btn--sm">Get Directions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         8. GALLERY
+    ════════════════════════════════════════ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <div class="gallery__header reveal-group">
+          <p class="section-eyebrow reveal-item">Moments to cherish</p>
+          <h2 class="section-title reveal-item">Our Gallery</h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--tall reveal-item">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 1" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item reveal-item">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 2" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item reveal-item">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 3" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item--wide reveal-item">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80"
+              alt="Wedding Moment 4" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item reveal-item">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 5" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item reveal-item">
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 6" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item--tall reveal-item">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 7" class="gallery__img" loading="lazy">
+          </div>
+          <div class="gallery__item reveal-item">
+            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding Moment 8" class="gallery__img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         9. FAMILY
+    ════════════════════════════════════════ -->
+    <section class="family" id="family">
+      <div class="family__container">
+        <div class="family__header reveal-group">
+          <p class="section-eyebrow reveal-item">With blessings from</p>
+          <h2 class="section-title reveal-item">Our Families</h2>
+        </div>
+        <div class="family__grid">
+          <!-- Groom's Family -->
+          <div class="family__side reveal-group">
+            <h3 class="family__side-title reveal-item">Groom's Family</h3>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">F</span></div>
+              <h4 class="family__name">[Father's Name]</h4>
+              <p class="family__relation">Father of the Groom</p>
+            </div>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">M</span></div>
+              <h4 class="family__name">[Mother's Name]</h4>
+              <p class="family__relation">Mother of the Groom</p>
+            </div>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">S</span></div>
+              <h4 class="family__name">[Sibling's Name]</h4>
+              <p class="family__relation">Brother / Sister</p>
+            </div>
+          </div>
+          <!-- Bride's Family -->
+          <div class="family__side reveal-group">
+            <h3 class="family__side-title reveal-item">Bride's Family</h3>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">F</span></div>
+              <h4 class="family__name">[Father's Name]</h4>
+              <p class="family__relation">Father of the Bride</p>
+            </div>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">M</span></div>
+              <h4 class="family__name">[Mother's Name]</h4>
+              <p class="family__relation">Mother of the Bride</p>
+            </div>
+            <div class="family__member reveal-item">
+              <div class="family__avatar"><span class="family__initial">S</span></div>
+              <h4 class="family__name">[Sibling's Name]</h4>
+              <p class="family__relation">Brother / Sister</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         10. TIMELINE / SCHEDULE
+    ════════════════════════════════════════ -->
+    <section class="timeline" id="timeline">
+      <div class="timeline__bg-image">
+        <img src="images/couple-sketch.jpg"
+          alt="" aria-hidden="true" class="timeline__bg-img is-couple-bg is-couple-bg--sketch" loading="lazy">
+      </div>
+      <div class="timeline__overlay"></div>
+      <div class="timeline__container">
+        <div class="timeline__header reveal-group">
+          <p class="section-eyebrow reveal-item">The Day's Journey</p>
+          <h2 class="section-title reveal-item">Event Schedule</h2>
+        </div>
+        <div class="timeline__track">
+          <div class="timeline__line"></div>
+          <div class="timeline__event timeline__event--left reveal-item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__time">9:00 AM</span>
+              <h4 class="timeline__event-title">Welcome &amp; Seating</h4>
+              <p class="timeline__event-desc">Guests arrive and are guided to their seats. Light refreshments served.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__event timeline__event--right reveal-item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__time">10:00 AM</span>
+              <h4 class="timeline__event-title">The Ceremony</h4>
+              <p class="timeline__event-desc">The sacred wedding ceremony begins with traditional rituals and blessings.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__event timeline__event--left reveal-item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__time">12:30 PM</span>
+              <h4 class="timeline__event-title">Lunch &amp; Celebration</h4>
+              <p class="timeline__event-desc">A grand feast to celebrate the newly-wed couple with music and joy.</p>
+            </div>
+          </div>
+          <div class="timeline__event timeline__event--right reveal-item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__time">7:00 PM</span>
+              <h4 class="timeline__event-title">Evening Reception</h4>
+              <p class="timeline__event-desc">Join us for an evening of dinner, dancing, and unforgettable memories.</p>
+            </div>
+          </div>
+          <div class="timeline__event timeline__event--left reveal-item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__time">9:30 PM</span>
+              <h4 class="timeline__event-title">Cake Cutting &amp; Toast</h4>
+              <p class="timeline__event-desc">Raise your glasses for the couple as they cut the wedding cake together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         11. SAVE THE DATE
+    ════════════════════════════════════════ -->
+    <section class="save-date" id="saveDate">
+      <div class="save-date__bg">
+        <img src="images/couple-floral-arch.jpg"
+          alt="" aria-hidden="true" class="save-date__bg-img is-couple-bg" loading="lazy">
+      </div>
+      <div class="save-date__overlay"></div>
+      <div class="save-date__container reveal-group">
+        <p class="section-eyebrow reveal-item">Don't forget</p>
+        <h2 class="section-title reveal-item">Save the Date</h2>
+        <p class="save-date__text reveal-item">Add our wedding to your calendar so you don't miss a moment of the
+          celebration.</p>
+        <div class="save-date__actions reveal-item">
+          <button class="btn btn--primary" id="addToCalendar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            Add to Calendar
+          </button>
+          <button class="btn btn--outline" id="shareInvitation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" />
+            </svg>
+            Share Invitation
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         12. DIRECTIONS
+    ════════════════════════════════════════ -->
+    <section class="directions" id="directions">
+      <div class="directions__container">
+        <div class="directions__header reveal-group">
+          <p class="section-eyebrow reveal-item">Find your way</p>
+          <h2 class="section-title reveal-item">Getting There</h2>
+        </div>
+        <div class="directions__content reveal-group">
+          <div class="directions__map-card reveal-item">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80"
+              alt="Map View" class="directions__map-bg" loading="lazy">
+            <div class="directions__map-content">
+              <div style="color: var(--c-gold); margin-bottom: 0.5rem;">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+              </div>
+              <h4
+                style="font-family: var(--ff-display); font-size: 1.25rem; color: var(--c-ivory); margin-bottom: 0.3rem;">
+                [Venue Location Name]</h4>
+              <p style="font-size: 0.9rem; color: var(--c-ivory-dim); margin-bottom: 1rem;">[Palace Road, Kochi, Kerala]
+              </p>
+              <a href="https://maps.google.com" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+          <div class="directions__info reveal-item">
+            <div class="directions__info-card">
+              <h4>Venue Address</h4>
+              <p>[Grand Heritage Convention Centre]<br>[Palace Road, Near Lake View, Kochi, Kerala 682001]</p>
+            </div>
+            <div class="directions__info-card">
+              <h4>Valet &amp; Parking</h4>
+              <p>Ample on-site parking is available. Complimentary valet service will assist you at the main foyer.</p>
+            </div>
+            <div class="directions__info-card">
+              <h4>Accommodation</h4>
+              <p>Special booking rates have been arranged at nearby partner luxury hotels. Please reach out for details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         13. CLOSING / FOOTER
+    ════════════════════════════════════════ -->
+    <footer class="closing" id="closing">
+      <div class="closing__bg-image">
+        <img src="images/couple-floral-arch.jpg"
+          alt="" aria-hidden="true" class="closing__bg-img is-couple-bg" loading="lazy">
+      </div>
+      <div class="closing__overlay"></div>
+      <div class="closing__container reveal-group">
+        <figure class="closing__portrait reveal-item">
+          <img src="images/couple-sketch.jpg" alt="Hand-coloured sketch portrait of Adharsh &amp; Anekha"
+            class="closing__portrait-img" width="900" height="898" loading="lazy" decoding="async">
+        </figure>
+        <div class="closing__ornament reveal-item" aria-hidden="true">
+          <svg width="80" height="40" viewBox="0 0 80 40" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M0 20 Q20 0 40 20 Q60 40 80 20" />
+          </svg>
+        </div>
+        <p class="closing__eyebrow reveal-item">With heartfelt gratitude</p>
+        <h2 class="closing__title reveal-item">
+          <span>Adharsh</span>
+          <span class="closing__amp">&amp;</span>
+          <span>Anekha</span>
+        </h2>
+        <p class="closing__message reveal-item">
+          We are truly blessed to have you in our lives.<br>
+          Your presence and blessings on our special day would mean the world to us.
+        </p>
+        <p class="closing__thank-you reveal-item">Thank you</p>
+        <div class="closing__divider reveal-item"></div>
+        <p class="closing__footer-note reveal-item">
+          Made with <span class="closing__heart">♥</span> for our celebration &bull; December 03, 2026
+        </p>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+         BACK TO TOP BUTTON (Smooth Scroll)
+    ════════════════════════════════════════ -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Back to top">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
