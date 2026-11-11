@@ -7,7 +7,7 @@
   'use strict';
 
   /* ─── Constants ─── */
-  const WEDDING_DATE = new Date('2026-12-03T10:00:00+05:30');
+  const WEDDING_DATE = new Date('2026-12-03T08:30:00+05:30');
 
   /* ─── DOM Cache ─── */
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
@@ -73,9 +73,9 @@
 
      Phase 1 (0s–1.6s): Loader rings spin with "A & A" monogram
      Phase 2 (1.6s–4.5s): Rings fade out, loader dissolves,
-                          "Adharsh" writes in signature calligraphy,
+                          "Adarsh" writes in signature calligraphy,
                           "weds" writes in golden script,
-                          "Anekha" writes in signature calligraphy.
+                          "Aneekha" writes in signature calligraphy.
      Phase 3 (4.5s+):     Names stay permanently visible in Island Moments font;
                           Eyebrow, divider, subtitle, date badge, and
                           scroll cue glide into place around the names.
@@ -138,7 +138,7 @@
       ease: 'power2.inOut'
     }, '-=0.2');
 
-    /* 2c: Smoothly write "Adharsh" in signature calligraphy */
+    /* 2c: Smoothly write "Adarsh" in signature calligraphy */
     if (heroGroom) {
       tl.to(heroGroom, {
         clipPath: 'inset(0 0% 0 0)',
@@ -156,7 +156,7 @@
       }, '-=0.15');
     }
 
-    /* 2e: Smoothly write "Anekha" in signature calligraphy */
+    /* 2e: Smoothly write "Aneekha" in signature calligraphy */
     if (heroBride) {
       tl.to(heroBride, {
         clipPath: 'inset(0 0% 0 0)',
@@ -808,9 +808,9 @@
       const icsContent = [
         'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Wedding Invitation//EN',
         'BEGIN:VEVENT', 'DTSTART:20261203T043000Z', 'DTEND:20261203T173000Z',
-        'SUMMARY:Adharsh & Anekha Wedding',
-        'DESCRIPTION:You are invited to the wedding celebration of Adharsh & Anekha.',
-        'LOCATION:[Venue Name], [City]', 'STATUS:CONFIRMED',
+        'SUMMARY:Adarsh & Aneekha Wedding',
+        'DESCRIPTION:Wedding celebration of Adarsh & Aneekha on Thursday, 03 December 2026. Thalikettu at Guruvayoor Temple (8:30 AM – 9:30 AM) and Reception at MD Convention Centre, Konathukunnu (5:00 PM – 8:00 PM).',
+        'LOCATION:MD Convention Centre, Konathukunnu', 'STATUS:CONFIRMED',
         'END:VEVENT', 'END:VCALENDAR',
       ].join('\r\n');
 
@@ -835,8 +835,8 @@
 
     shareBtn.addEventListener('click', async () => {
       const shareData = {
-        title: 'Adharsh & Anekha Wedding Invitation',
-        text: 'You are cordially invited to the wedding of Adharsh & Anekha on December 03, 2026!',
+        title: 'Adarsh & Aneekha Wedding Invitation',
+        text: 'You are cordially invited to the wedding of Adarsh & Aneekha on Thursday, 03 December 2026!',
         url: window.location.href,
       };
 

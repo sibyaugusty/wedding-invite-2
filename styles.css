@@ -2221,3 +2221,51 @@ footer[id] {
     height: 20px;
   }
 }
+.family__residence {
+  margin-top: var(--s-md);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.family__residence-card {
+  background: var(--c-glass-bg);
+  border: 1px solid var(--c-glass-border);
+  border-radius: var(--radius-md);
+  padding: var(--s-md) var(--s-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 320px;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px hsla(348, 40%, 5%, 0.4);
+}
+
+.family__address {
+  font-family: var(--ff-body);
+  font-size: 0.95rem;
+  color: var(--c-ivory);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.family__contact {
+  font-size: 0.9rem;
+  color: var(--c-gold-light);
+  margin-top: 0.2rem;
+}
+
+.family__phone {
+  color: var(--c-gold-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--duration-fast);
+}
+
+.family__phone:hover {
+  color: var(--c-gold);
+  text-decoration: underline;
+}
